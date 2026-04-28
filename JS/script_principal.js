@@ -1,4 +1,10 @@
 let usuario = localStorage.getItem("usuario");
 
-//traemos el documento
-document.getElementById("bienvenida").innerHTML = "Buenvenido, usuario " + usuario; //innerHTML
+document.getElementById("bienvenida").innerHTML = "Bienvenido usuario " + usuario;
+
+function cerrarSesion(){
+    localStorage.removeItem("usuario");
+    window.location.href="/index.html";
+}
+
+document.getElementById("cerrarSesion").addEventListener("click",cerrarSesion);
