@@ -3,7 +3,8 @@ function login() {
     let usuario = document.querySelectorAll('.entradaTexto')[0].value;
     let contra = document.querySelectorAll('.entradaTexto')[1].value;
 
-    if (usuario === "equipo2" && contra === "123") {
+    if (usuario === "admin" && contra === "admin") {
+        localStorage.setItem("usuario", usuario);
         window.location.href = "pages/principal.html";
     } else {
         divMensaje.innerHTML = "Acceso Denegado. Usuario o contraseña incorrectos.";
