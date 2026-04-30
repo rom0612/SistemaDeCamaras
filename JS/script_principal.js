@@ -4,7 +4,7 @@ document.getElementById("bienvenida").innerHTML = "Bienvenido usuario " + usuari
 
 function cerrarSesion(){
     localStorage.removeItem("usuario");
-    window.location.href="/index.html";
+    window.location.href="../index.html";
 }
 
 document.getElementById("cerrarSesion").addEventListener("click",cerrarSesion);
