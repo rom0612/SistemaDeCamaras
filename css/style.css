@@ -91,3 +91,18 @@ label{
     border: 1px solid #f5c6cb;
     padding: 10px;
 }
+#cerrarSesion{
+    padding:14px;
+    position: relative;
+    top: 40px;  
+    left: auto; 
+    border: none;
+    background: #864cb1;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+#cerrarSesion:hover{
+    background: #6d2aa0;
+}
