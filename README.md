@@ -8,4 +8,4 @@
 
 ## Usuario
 - Correo: juridico@gmail.com
-- Contraseña: 123456
+- Contraseña: jurid123
