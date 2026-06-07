@@ -2,53 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - PUMAVISION</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="formularioInicio">
-<<<<<<< Updated upstream
-        <img src="assets/logo.png" alt="Cámara de Seguridad" id="logoCamaras">
-
-        <label>Usuario</label>
-        <input type="text" placeholder="Usuario" class="entradaTexto">
-
-        <label>Contraseña</label>
-        <input type="password" placeholder="Contraseña" class="entradaTexto">
-=======
-        <img id="logoCamaras" src="assets/logo.png" alt="Logo PUMAVISION" />
-        <h1>PUMAVISION</h1>
-        <div id="divMensaje"></div>
->>>>>>> Stashed changes
+        <div class="icono-contenedor">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M21 6.5l-4 4V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4V6.5z"/></svg>
+        </div>
+        <h2>BIENVENIDO AL SISTEMA DE CAMARAS</h2>
         
-        <form id="contenedorInputs">
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" placeholder="correo@pumavision.unam.mx" class="entradaTexto" required>
+        <div class="campo">
+            <label>CORREO</label>
+            <input type="email" id="usuario" placeholder="correo@ejemplo.com">
+        </div>
+        <div class="campo">
+            <label>PASSWORD</label>
+            <input type="password" id="contrasena" placeholder="********">
+        </div>
 
-<<<<<<< Updated upstream
-    <script src="js/script.js"></script>
-=======
-            <label for="contrasena">Contraseña</label>
-            <input type="password" id="contrasena" placeholder="••••••••" class="entradaTexto" required>
-            
-            <label for="rolUsuario">Nivel de Acceso</label>
-            <select id="rolUsuario" class="entradaTexto" required>
-                <option value="" disabled selected>Seleccione su rol</option>
-                <option value="ti">Administrador (TI)</option>
-                <option value="direccion">Dirección General</option>
-                <option value="juridico">Departamento Jurídico</option>
-                <option value="denunciante">Denunciante / Afectado</option>
-            </select>
-
-            <button type="button" id="btnIngresar">Entrar al Sistema</button>
-            <a href="pages/registro.html" style="text-align: center; color: #3b82f6; margin-top: 15px; font-size: 14px; text-decoration: none;">Registrar nuevo usuario</a> 
-        </form>
+        <button id="btnIngresar">ENTRAR</button>
+        <a href="#" id="recuperar">¿Olvidaste la contraseña?</a>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="JS/supabase.js"></script>
+ 
     <script src="JS/script.js"></script>
->>>>>>> Stashed changes
 </body>
 </html>
