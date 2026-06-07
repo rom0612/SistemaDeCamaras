@@ -1,87 +1,37 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial;
-    background: #8f98e4;
-
-    display:flex;
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0f1a; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-#formularioInicio{
-    background-color: #ffffff;
-    width: 350px;
+#formularioInicio {
+    background-color: #141b2d;
+    width: 100%;
+    max-width: 380px;
     padding: 30px;
-
-    border-radius: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 1px solid #1e2a44;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Espacio uniforme entre elementos */
 }
 
 h1 {
-    color: #1a2a6c;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-
-label{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: rgb(38, 38, 185);
-}
-#logoCamaras {
-    width: 100px;
-    height: auto;
-    margin: 0 auto 20px;
-    display: block;
-}
-#mensaje {
-    min-height: 40px;
-    margin-bottom: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-.entradaTexto{
-    padding: 14px;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 2px solid rgb(96, 8, 238);
-    outline: none;
-}
-.entradaTexto{
-    transition: 0.3s;
-}
-.entradaTexto:focus{
-    border-color: green;
-    transform: scale(1.1);
-}
-#btnIngresar{
-    padding:14px;
-    border: none;
-    background: #8f98e4;
-    color: white;
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-#btnIngresar:hover{
-    background: #0c21e2;
-}
-#divMensaje {
+    color: #3b82f6;
     text-align: center;
     margin-bottom: 10px;
+<<<<<<< Updated upstream
     font-weight: bold;
     color: #d9534f;
 }
@@ -90,4 +40,61 @@ label{
     color: #721c24;
     border: 1px solid #f5c6cb;
     padding: 10px;
+=======
+}
+
+label {
+    color: #94a3b8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#logoCamaras {
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.entradaTexto {
+    padding: 14px;
+    background-color: #0a0f1a;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #1e2a44;
+    border-radius: 8px 8px 0 0;
+    outline: none;
+    transition: 0.3s;
+    font-size: 15px;
+    width: 100%;
+}
+
+.entradaTexto:focus {
+    border-color: #3b82f6;
+    background-color: #111827;
+}
+
+#btnIngresar, #btnRegistrar {
+    padding: 15px;
+    border: none;
+    background: #3b82f6;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+}
+
+#btnIngresar:hover, #btnRegistrar:hover {
+    background: #2563eb;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+#divMensaje {
+    text-align: center;
+    font-weight: bold;
+    color: #ef4444;
+>>>>>>> Stashed changes
 }
