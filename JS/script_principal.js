@@ -1,10 +1,9 @@
 let usuario = localStorage.getItem("usuario");
+let rol = localStorage.getItem("rol");
 
-document.getElementById("bienvenida").innerHTML = "Bienvenido usuario " + usuario;
+document.getElementById("bienvenida").innerHTML = `Bienvenido ${usuario} (${rol})`;
 
-function cerrarSesion(){
-    localStorage.removeItem("usuario");
-    window.location.href="../index.html";
+
+if (rol !== 'ti') {
+    document.getElementById("btnConfiguracion").style.display = 'none';
 }
-
-document.getElementById("cerrarSesion").addEventListener("click",cerrarSesion);

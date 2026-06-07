@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Sistemas de Cámaras</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Registro de Personal</h1>
+    
     <form id="formularioInicio">
-        <img id="logoCamaras" src="../assets/logo.png" alt="Logo Camaras" />
-        <div id="contenedorInputs">
+        <img id="logoCamaras" src="../assets/logo.png" alt="Logo PUMAVISION" />
         
-        </div>
-        <button type="button" id="btnRegistrar" class="btnIngresar">Registrar</button>
+        <h1>Registro de Personal</h1>
+        <div id="divMensaje"></div> 
+        
+        <div id="contenedorInputs">
+            </div>
+
+        <label for="rolUsuario">Asignar Rol al Personal</label>
+        <select id="rolUsuario" class="entradaTexto" required>
+            <option value="" disabled selected>Seleccione el rol</option>
+            <option value="ti">Administrador (TI)</option>
+            <option value="direccion">Dirección General</option>
+            <option value="juridico">Departamento Jurídico</option>
+            <option value="denunciante">Denunciante / Afectado</option>
+        </select>
+
+        <button type="button" id="btnRegistrar">Completar Registro</button>
+        
+        <a href="../index.html" style="display: block; text-align: center; color: #004adf; margin-top: 15px; font-size: 14px; text-decoration: none;">Volver al Login</a>
     </form>
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="../JS/supabase.js"></script>
     <script src="../JS/script_registro.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>

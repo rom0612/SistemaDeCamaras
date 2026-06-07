@@ -2,45 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Seguridad</title>
+    <title>Login - PUMAVISION</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Sistemas de Camaras</h1> <div id="mensaje"></div>
-    
     <div id="formularioInicio">
-        <img src="assets/logo.png" alt="Cámara de Seguridad" id="logoCamaras">
-
-        <label>Correo</label>
-        <input type="email" placeholder="Correo" class="entradaTexto">
-
-        <label>Contraseña</label>
-        <input type="password" placeholder="Contraseña" class="entradaTexto">
+        <div class="icono-contenedor">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M21 6.5l-4 4V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4V6.5z"/></svg>
+        </div>
+        <h2>BIENVENIDO AL SISTEMA DE CAMARAS</h2>
         
-        <button id="btnIngresar">Entrar al Sistema</button>
-        <a href="pages/registro.html">Registrar nuevo usuario</a> 
-    </div>
+        <div class="campo">
+            <label>CORREO</label>
+            <input type="email" id="usuario" placeholder="correo@ejemplo.com">
+        </div>
+        <div class="campo">
+            <label>PASSWORD</label>
+            <input type="password" id="contrasena" placeholder="********">
+        </div>
 
-    <h2>Equipo 2: Sistemas de Cámaras</h2>
-<<<<<<< HEAD
-    <ol>
-=======
-    <ol class="lista-integrantes">
->>>>>>> roman
-        <li>Garcia Carrillo Noe</li>
-        <li>Rodriguez Trejo Fernanda Ivonne</li>
-        <li>Roman Ramos Maria Fernanda</li>
-        <li>Santamaria Hernandez Tania Isabel</li>
-        <li>Velasco Ojeda Alma Rosa</li>
-    </ol>
-<<<<<<< HEAD
-    <script src="js/script.js"></script>
-=======
-    
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="JS/supabase.js"></script>
+        <button id="btnIngresar">ENTRAR</button>
+        <div id="mensaje"></div>
+        <a href="#" id="recuperar">¿Olvidaste la contraseña?</a>
+    </div>
+ 
     <script src="JS/script.js"></script>
->>>>>>> roman
 </body>
 </html>
