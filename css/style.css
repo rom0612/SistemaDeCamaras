@@ -1,25 +1,23 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial;
-    background: #8f98e4;
-
-    display:flex;
+    background: #252525;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 }
 
-#formularioInicio{
-    background-color: #ffffff;
+#formularioInicio {
+    background-color: #333333;
     width: 350px;
     padding: 30px;
-
     border-radius: 30px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -27,21 +25,35 @@ body{
 }
 
 h1 {
-    color: #1a2a6c;
+    color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
 }
 
-label{
+h2 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.lista-integrantes {
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+label {
     margin-bottom: 10px;
     margin-top: 10px;
-    color: rgb(38, 38, 185);
+    color: #ffffff;
 }
+
 #logoCamaras {
     width: 100px;
     height: auto;
     margin: 0 auto 20px;
     display: block;
 }
+
 #mensaje {
     min-height: 40px;
     margin-bottom: 15px;
@@ -53,38 +65,43 @@ label{
     font-size: 14px;
     transition: all 0.3s ease;
 }
-.entradaTexto{
+
+.entradaTexto {
     padding: 14px;
     margin-bottom: 20px;
     border: none;
-    border-bottom: 2px solid rgb(96, 8, 238);
+    border-bottom: 2px solid #666666;
+    background-color: #444444;
+    color: #ffffff;
     outline: none;
-}
-.entradaTexto{
     transition: 0.3s;
 }
-.entradaTexto:focus{
-    border-color: green;
+
+.entradaTexto:focus {
+    border-color: #ffffff;
     transform: scale(1.1);
 }
-#btnIngresar{
-    padding:14px;
-    border: none;
-    background: #8f98e4;
-    color: white;
-    cursor: pointer;
 
+#btnIngresar {
+    padding: 14px;
+    border: none;
+    background: #ffffff;
+    color: #2b44c2;
+    cursor: pointer;
     transition: 0.3s;
 }
-#btnIngresar:hover{
-    background: #0c21e2;
+
+#btnIngresar:hover {
+    background: #e0e0e0;
 }
+
 #divMensaje {
     text-align: center;
     margin-bottom: 10px;
     font-weight: bold;
     color: #d9534f;
 }
+
 .error-estilo {
     background-color: #f8d7da;
     color: #721c24;
@@ -100,14 +117,48 @@ label{
 #btnIngresar, #btnRegistrar {
     padding: 14px;
     border: none;
-    background: #8f98e4;
-    color: white;
+    background: #ffffff;
+    color: #2b44c2;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 10px; /* Opcional: le da un borde redondeado más moderno */
+    border-radius: 10px;
     font-size: 16px;
+    font-weight: bold;
 }
 
 #btnIngresar:hover, #btnRegistrar:hover {
-    background: #0c21e2;
+    background: #e0e0e0;
+}
+
+#formularioInicio a {
+    color: #cccccc;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+#formularioInicio a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#cerrarSesion {
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: 2px solid #d9534f;
+    background-color: transparent;
+    color: #d9534f;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#cerrarSesion:hover {
+    background-color: #d9534f;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(217, 83, 79, 0.4);
 }
